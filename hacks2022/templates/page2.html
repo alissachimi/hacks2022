@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<center>
+<body style ="background-color: whitesmoke;">
+    
+    <h1 style ="background-color: rgb(170, 202, 122);"> Calculate your CO₂ emmissions! </h1>
+   <form method="POST">
+      {% csrf_token %}
+   <label for="vmodel">Enter the year of your Honda Accord (ex. 2015):</label>
+   <input id="vmodel" name="vmodel"></input>
+   <button type="submit" value="Anchor Link Button">Send</button>
+</form>
+</body>
+
+<p style="color: red;">{{message}}</p>
+
+</center>
+
+</body>
+</html>

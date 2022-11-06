@@ -1,0 +1,21 @@
+<html>
+<center>
+<body style ="background-color: whitesmoke;">
+    
+    <h1 style ="background-color: rgb(170, 202, 122);"> Calculate your CO₂ emmissions! </h1>
+    <form method="POST">
+       {% csrf_token %}
+    <label for="miles" style="font-family:bradley hand;">Enter your miles traveled to the nearest mile:</label>
+    <input id="miles" name="miles" type="number"></input>
+    <button type="submit">Send</button>
+
+    </form>
+    <a href="yay.html">or, click here if you walked, biked, or took public transport for this trip</a><br><br><br><br><br>
+    <h1 style ="background-color: white;" style="font-family:bradley hand;">Total CO₂ emissions for your 2006 Honda Accord: {{message}}</h1>
+    
+    <img src="https://freesvg.org/img/simple_car_side.png"><br><br><br>
+    <a href="home.html">Return to Home</a>
+</body>
+</center>
+
+</html>
